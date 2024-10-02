@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000; // 環境変数からポートを取得
 
 // 静的ファイルの提供
 app.use(express.static(path.join(__dirname)));
@@ -12,5 +12,6 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
+    console.log(`Server is running.......!`);
 });
+
