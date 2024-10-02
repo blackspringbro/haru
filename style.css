@@ -14,9 +14,9 @@ body {
 
 #title{
   text-align: center;
-  color: antiquewhite;
+  color: black;
   font-style: italic;
-  
+  /* antiquewhite; */ 
 }
 
 .contents {
@@ -30,7 +30,8 @@ body {
 }
 .contents__li {
 	text-align: left;
-  color: aliceblue;
+  color: rgb(78, 78, 135)
+  /* aliceblue;*/
 }
 
 
